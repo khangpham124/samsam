@@ -196,6 +196,18 @@ div + .sidebar__filter {
   border-radius: 100%;
   border: none; }
 
+/* TEXT */
+.text {
+  margin-top: 2rem; }
+  .text + .text {
+    margin-top: 0.5rem; }
+  .text--grey a {
+    color: #999; }
+  .text--black a {
+    color: #000; }
+  .text--grey {
+    font-weight: 700; }
+
 /* FORM */
 .contactSection {
   margin-top: 8rem;

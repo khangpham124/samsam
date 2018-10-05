@@ -260,6 +260,28 @@ textarea {
     border: none;
 }
 
+/* TEXT */
+.text {
+    margin-top: 2rem;
+    &+& {
+        margin-top: 0.5rem;
+    }
+    &--grey {
+        a {
+            color: #999;
+        }
+    }
+    &--black {
+        a {
+            color: #000;
+        }
+    }
+    &--grey {
+        font-weight: 700;
+    }
+}
+
+
 /* FORM */
 .contactSection {
     margin-top: 8rem;
