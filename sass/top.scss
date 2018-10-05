@@ -339,6 +339,9 @@
         a+.button-red {
             margin-left: 0.1rem;
         }
+        .button-red+a {
+            margin-left: 0.1rem;
+        }
     }
     
     @media (min-width: 768px) and (max-width: 1024px) {
