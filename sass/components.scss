@@ -108,7 +108,7 @@ textarea {
     color: #fff;
     border-radius: 30px;
     display: inline-block;
-    padding: 0.5rem 1.2rem;
+    padding: 1rem 1.2rem;
     text-align: center;
     font-size: 15px;
     line-height: 1;
@@ -258,4 +258,70 @@ textarea {
 #news .sidebar__news__thumb img {
     border-radius: 100%;
     border: none;
+}
+
+/* FORM */
+.contactSection {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    &__col {
+        
+        &__icon {
+            color: #cccccc;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+        &__form {
+            input+input {
+                margin-top: 30px;
+            }
+            input+textarea {
+                margin-top: 30px;
+            }
+            textarea+input {
+                margin-top: 30px;
+            }
+            input[type=text],input[type=email],input[type=password] {
+                display: block;
+                width: 100%;
+                border: 1px solid #e6e6e6;
+                padding: 1rem 1.5rem;
+            }
+            textarea {
+                width: 100%;
+                border: 1px solid #e6e6e6;
+                padding: 1rem 1.5rem;
+                min-height: 200px;
+            }
+            input[type=submit] {
+                width: 140px;
+                text-align: center;
+            }
+        }
+        &__btn {
+            margin-top: 3rem;
+        }
+    }
+    h3+p {
+        margin-top: 2rem;
+    }
+    p {
+        text-align: justify;
+        color: #666;
+        &+p {
+            margin: 2rem 0;
+        }
+        strong {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .contactSection {
+        margin: 4rem 0 2rem;
+    }
+    .contactSection__col__form {
+        margin-top: 3rem;
+    }
 }
