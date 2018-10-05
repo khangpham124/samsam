@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/chi-tiet-sp\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/chi-tiet-sp\/index.html",
+		"oF": 0
+		},
 	"\/css\/bootstrap-slider-min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -318,6 +325,38 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/images\/product\/star.png": {
+		"ft": 32768,
+		"iS": 1201,
+		"oA": 0,
+		"oAP": "\/images\/product\/star.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/product\/test_slide.jpg": {
+		"ft": 16384,
+		"iS": 41288,
+		"oA": 0,
+		"oAP": "\/images\/product\/test_slide.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/product\/thông-tin-sp_03.png": {
+		"ft": 32768,
+		"iS": 1258,
+		"oA": 0,
+		"oAP": "\/images\/product\/thông-tin-sp_03.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/images\/top\/icon_gift.png": {
@@ -775,6 +814,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/contact.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/detail.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/detail.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

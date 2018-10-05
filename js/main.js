@@ -94,6 +94,21 @@ $(function() {
             }
         ]
     });
+
+    $('#large_slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '#small_slide'
+    });
+    $('#small_slide').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '#large_slide',
+        focusOnSelect: true
+    });
+
     $('.textIcon--search').click(function() {
         $('.formSearch').slideToggle(100);
     });
@@ -103,18 +118,18 @@ $(function() {
         }
     });
     $('.collapse').collapse()
-    $("#cart .button").click(function() {
-		var $button = $(this);
-		var oldValue = $button.parent().find("input").val();
-		if ($button.attr("rel") == '+') {
-			var newVal = parseFloat(oldValue) + 1;
-		} else {
-			if (oldValue > 0) {
-				var newVal = parseFloat(oldValue) - 1;
-			} else {
-				newVal = 0;
-			}
-		}
-		$button.parent().find("input").val(newVal);
-	});	
+    $(".button").click(function() {
+        var $button = $(this);
+        var oldValue = $button.parent().find("input").val();
+        if ($button.attr("rel") == '+') {
+            var newVal = parseFloat(oldValue) + 1;
+        } else {
+            if (oldValue > 0) {
+                var newVal = parseFloat(oldValue) - 1;
+            } else {
+                newVal = 0;
+            }
+        }
+        $button.parent().find("input").val(newVal);
+    });
 });

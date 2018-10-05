@@ -40,7 +40,7 @@
                             margin-left: 5px;
                             font-size: 1.3rem;
                         }
-                    }    
+                    }
                 }
             }
             &__close {
@@ -53,27 +53,6 @@
             }
             &__total {
                 position: relative;
-            }
-            &__input {
-                position: relative;
-                background: #f2f2f2;
-                padding: 0.5rem 0;
-                input {
-                    border: none;
-                    width: 100%;
-                    text-align: center;
-                }
-                &__btn {
-                    position: absolute;
-                    top:25%;
-                    outline: none;
-                    &.inc {
-                        left: 1rem;
-                    }
-                    &.dec {
-                        right: 1rem;
-                    }
-                }
             }
             &__code {
                 border: 1px solid #ededed;
@@ -103,9 +82,9 @@
         }
     }
     @media (max-width: 767px) {
-        .cartBox__table{
+        .cartBox__table {
             &__grandTotal {
-            margin-top: 2rem;
+                margin-top: 2rem;
             }
             thead {
                 td {
