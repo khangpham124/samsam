@@ -71,4 +71,35 @@
             }
         }
     }
+    .nav-pills {
+        margin-top: 4rem;
+        .nav-link {
+            background: none;
+            line-height: 1;
+            padding-top: 0;
+            padding-bottom: 0;
+            color: #999;
+            &.active {
+                color: #cb2024;
+                font-weight: 700;
+            }
+        }
+        .nav-item {
+            border-left: 1px solid #e6e6e6;
+            line-height: 1;
+            &:first-child {
+                border: none;
+                a {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    .tab-content {
+        color: #666;
+        margin-top: 2rem;
+    }
+    .tab-content+h3 {
+        margin-top: 5rem;
+    }
 }

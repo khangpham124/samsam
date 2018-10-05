@@ -1124,3 +1124,29 @@ div + .sidebar__filter {
   color: #666; }
   #detail .detailProd--info__desc + div {
     margin-top: 3rem; }
+
+#detail .nav-pills {
+  margin-top: 4rem; }
+  #detail .nav-pills .nav-link {
+    background: none;
+    line-height: 1;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #999; }
+    #detail .nav-pills .nav-link.active {
+      color: #cb2024;
+      font-weight: 700; }
+  #detail .nav-pills .nav-item {
+    border-left: 1px solid #e6e6e6;
+    line-height: 1; }
+    #detail .nav-pills .nav-item:first-child {
+      border: none; }
+      #detail .nav-pills .nav-item:first-child a {
+        padding-left: 0; }
+
+#detail .tab-content {
+  color: #666;
+  margin-top: 2rem; }
+
+#detail .tab-content + h3 {
+  margin-top: 5rem; }
