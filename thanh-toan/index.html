@@ -16,7 +16,7 @@
     <title>samsam project</title>
 </head>
 
-<body id="cart">
+<body id="checkout">
     <div class="wrapper">
         <div class="heabBar d-flex flex-column justify-content-end container-fluid">
             <ul class="d-flex flex-md-row align-items-center listControl">
@@ -53,72 +53,39 @@
         </header>
         <div class="maimImg"><img src="../images/account/main.jpg" alt=""></div>
 
-        <section class="container cartBox">
-            <form>
-                <table class="cartBox__table">
-                    <thead>
-                        <tr>
-                        <td>Sản phẩm</td>
-                        <td>Giá sản phẩm</td>
-                        <td>Số lượng</td>
-                        <td>Thành tiền</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="d-flex align-items-center flex-wrap">
-                                    <img src="../images/top/img03.jpg" class="cartBox__table__img" alt="">
-                                    <p>Rượu Bảo Sâm 5,5L</p>
-                                </div>
-                            </td>
-                            <td>1.000.000 vnd</td>
-                            <td>
-                                <div class="cartBox__table__input clearfix">
-                                    <div class='inc button cal cartBox__table__input__btn' rel='+' >+</div>
-                                    <div class='dec button cal cartBox__table__input__btn' id='dec'>-</div>
-                                    <input type="text" id="quantity" class="input_cal" readonly  value="1"> 
-                                </div>
-                            </td>
-                            <td>
-                                <div class="cartBox__table__total">2.000.000 vnd<button class="cartBox__table__close"><img src="../images/common/icon/icon_close.png" alt=""></button></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="d-flex align-items-center flex-wrap">
-                                    <img src="../images/top/img03.jpg" class="cartBox__table__img" alt="">
-                                    <p>Rượu Bảo Sâm 5,5L</p>
-                                </div>
-                            </td>
-                            <td>1.000.000 vnd</td>
-                            <td>
-                                <div class="cartBox__table__input clearfix">
-                                    <div class='inc button cal cartBox__table__input__btn' rel='+' >+</div>
-                                    <div class='dec button cal cartBox__table__input__btn' id='dec'>-</div>
-                                    <input type="text" id="quantity" class="input_cal" readonly  value="1"> 
-                                </div>
-                            </td>
-                            <td>
-                                <div class="cartBox__table__total">2.000.000 vnd<button class="cartBox__table__close"><img src="../images/common/icon/icon_close.png" alt=""></button></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">
-                                <div class="d-flex justify-content-between flex-wrap">
-                                    <p class="cartBox__table__code d-flex justify-content-between align-items-stretch"><input type="text" placeholder="Mã giảm giá"><button>Áp dụng</button></p>
-                                    <p class="cartBox__table__grandTotal">Tổng cộng: <span>2.000.000 vnđ</span></p>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="taC">
-                    <a href="" class="button-red button-red--white">Xem thêm</a>
-                    <a href="" class="button-red">Thanh toán</a>
+        <section class="container checkoutBox">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Thanh toán bằng tài khoản đã có / Đăng nhập ngay
+                        </button>
+                    </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                    </div>
                 </div>
-            </form>
-        </section>    
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Thanh toán không cần tài khoản
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer id="footer">
             <div class="container">
@@ -180,7 +147,7 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../plugins/slick/slick.min.js"></script>
     <script src="../js/main.js"></script>
-    <script type='text/javascript' src="../js/bootstrap-slider.js"></script>
+
 </body>
 
 </html>

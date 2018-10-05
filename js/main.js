@@ -97,11 +97,12 @@ $(function() {
     $('.textIcon--search').click(function() {
         $('.formSearch').slideToggle(100);
     });
-    // $('#ex1').slider({
-    //     formatter: function(value) {
-    //         return 'Current value: ' + value;
-    //     }
-    // });
+    $('#ex1').slider({
+        formatter: function(value) {
+            return 'Current value: ' + value;
+        }
+    });
+    $('.collapse').collapse()
     $("#cart .button").click(function() {
 		var $button = $(this);
 		var oldValue = $button.parent().find("input").val();

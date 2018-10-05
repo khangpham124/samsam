@@ -760,6 +760,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/sass/checkout.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/checkout.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/sass/components.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -863,6 +876,13 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/thanh-toan/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/thanh-toan/index.html",
+		"oF": 0
 		},
 	"/tin-tuc/index.html": {
 		"cB": 0,
