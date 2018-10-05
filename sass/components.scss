@@ -62,8 +62,8 @@ textarea {
 
 .h3_page {
     font-weight: 700;
-    font-size: 30px;
-    margin-bottom: 50px;
+    font-size: 2rem;
+    margin-bottom: 3rem;
     text-transform: uppercase;
     &__icon {
         text-align: center;
@@ -90,6 +90,7 @@ textarea {
 }
 
 .h4_page {
+    font-size: 1.4rem;
     &--red {
         background: #cb2024;
         color: #fff;

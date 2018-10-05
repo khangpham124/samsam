@@ -46,8 +46,8 @@ textarea {
 /* HEADING */
 .h3_page {
   font-weight: 700;
-  font-size: 30px;
-  margin-bottom: 50px;
+  font-size: 2rem;
+  margin-bottom: 3rem;
   text-transform: uppercase; }
   .h3_page__icon {
     text-align: center;
@@ -68,13 +68,14 @@ textarea {
   .h3_page--right {
     text-align: right; }
 
-.h4_page--red {
-  background: #cb2024;
-  color: #fff;
-  padding: 1rem; }
-
-.h4_page + ul {
-  margin-top: 20px; }
+.h4_page {
+  font-size: 1.4rem; }
+  .h4_page--red {
+    background: #cb2024;
+    color: #fff;
+    padding: 1rem; }
+  .h4_page + ul {
+    margin-top: 20px; }
 
 /* BUTTON */
 .button-red {
@@ -752,10 +753,14 @@ div + .sidebar__filter {
 
 @media (min-width: 1200px) {
   .wrapSlide {
-    width: 80%;
+    width: 85%;
     margin: 0 auto; }
   .listCatetory__item li .name {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .button-red {
+    padding: 0.5rem 0.8rem; }
+  a + .button-red {
+    margin-left: 0.5rem; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .listServices img {
