@@ -97,9 +97,23 @@ $(function() {
     $('.textIcon--search').click(function() {
         $('.formSearch').slideToggle(100);
     });
-    $('#ex1').slider({
-        formatter: function(value) {
-            return 'Current value: ' + value;
-        }
-    });
+    // $('#ex1').slider({
+    //     formatter: function(value) {
+    //         return 'Current value: ' + value;
+    //     }
+    // });
+    $("#cart .button").click(function() {
+		var $button = $(this);
+		var oldValue = $button.parent().find("input").val();
+		if ($button.attr("rel") == '+') {
+			var newVal = parseFloat(oldValue) + 1;
+		} else {
+			if (oldValue > 0) {
+				var newVal = parseFloat(oldValue) - 1;
+			} else {
+				newVal = 0;
+			}
+		}
+		$button.parent().find("input").val(newVal);
+	});	
 });

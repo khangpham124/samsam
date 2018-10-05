@@ -1,0 +1,123 @@
+#cart {
+    .cartBox {
+        margin-top: 8rem;
+        &__table {
+            &+div {
+                margin-top: 3rem;
+            }
+            width: 100%;
+            thead {
+                background: #f0f7f9;
+                td {
+                    padding: 1.5rem 2rem;
+                    font-weight: 700;
+                    text-align: center;
+                    &:first-child {
+                        text-align: left;
+                    }
+                }
+            }
+            &__img {
+                width: 160px;
+                height: auto;
+                margin-right: 1rem;
+            }
+            tbody {
+                td {
+                    width: 21%;
+                    padding: 2rem 0;
+                    text-align: center;
+                    color: #999;
+                    border-bottom: 1px solid #ededed;
+                    &:first-child {
+                        color: #000;
+                        font-weight: 700;
+                        width: 35%;
+                    }
+                    &:last-child {
+                        font-weight: 700;
+                        i {
+                            margin-left: 5px;
+                            font-size: 1.3rem;
+                        }
+                    }    
+                }
+            }
+            &__close {
+                background: none;
+                border: none;
+                padding: 0;
+                line-height: 1;
+                position: absolute;
+                right: 0;
+            }
+            &__total {
+                position: relative;
+            }
+            &__input {
+                position: relative;
+                background: #f2f2f2;
+                padding: 0.5rem 0;
+                input {
+                    border: none;
+                    width: 100%;
+                    text-align: center;
+                }
+                &__btn {
+                    position: absolute;
+                    top:25%;
+                    outline: none;
+                    &.inc {
+                        left: 1rem;
+                    }
+                    &.dec {
+                        right: 1rem;
+                    }
+                }
+            }
+            &__code {
+                border: 1px solid #ededed;
+                border-radius: 20px;
+                overflow: hidden;
+                button {
+                    display: inline-block;
+                    background: #f0f7f9;
+                    font-weight: 300;
+                    padding: 0.5rem 0.7rem;
+                    border: none;
+                    border-left: 1px solid #ededed;
+                    margin: 0;
+                }
+                input {
+                    border: none;
+                    padding: 0.5rem 1rem;
+                }
+            }
+            &__grandTotal {
+                color: #666666;
+                text-transform: uppercase;
+                span {
+                    color: #cb2024;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .cartBox__table{
+            &__grandTotal {
+            margin-top: 2rem;
+            }
+            thead {
+                td {
+                    padding: 1rem;
+                }
+            }
+            tbody td {
+                width: 25% !important;
+            }
+            &__img {
+                width: 80px;
+            }
+        }
+    }
+}

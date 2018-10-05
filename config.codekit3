@@ -63,6 +63,13 @@
 		"oAP": "/dang-nhap/index.html",
 		"oF": 0
 		},
+	"/gio-hang/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/gio-hang/index.html",
+		"oF": 0
+		},
 	"/gioi-thieu/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -185,6 +192,17 @@
 		"iS": 8228,
 		"oA": 0,
 		"oAP": "/images/common/header/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/common/icon/icon_close.png": {
+		"ft": 32768,
+		"iS": 1330,
+		"oA": 0,
+		"oAP": "/images/common/icon/icon_close.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -725,6 +743,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/sass/account.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/cart.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/cart.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

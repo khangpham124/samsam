@@ -105,6 +105,7 @@ textarea {
 
 .button-red {
     background: #e94957;
+    border: 2px solid #e94957;
     color: #fff;
     border-radius: 30px;
     display: inline-block;
@@ -116,10 +117,15 @@ textarea {
         border: none;
     }
     & + a {
-        margin-left: 5px;
+        margin-left: 1rem;
     }
     a + & {
-        margin-left: 5px;
+        margin-left: 1rem;
+    }
+    &--white {
+        background: #fff;
+        color: #333;
+        border: 2px solid #333;
     }
 }
 
