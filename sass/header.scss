@@ -1,0 +1,124 @@
+#header {
+    position: relative;
+    .headerInner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.Gnavi {
+    list-style: none;
+    li {
+        margin: 0 15px;
+        a {
+            color: #333 !important;
+            font-size: 16px;
+        }
+    }
+}
+
+.textIcon {
+    color: #333;
+    position: relative;
+    font-size: 16px;
+    span {
+        width: 15px;
+        height: 15px;
+        background: #333;
+        color: #fff;
+        border-radius: 100%;
+        font-size: 8px;
+        display: inline-block;
+        line-height: 15px;
+        text-align: center;
+        position: absolute;
+        top: 7px;
+        right: 0px;
+    }
+}
+
+.heabBar {
+    background: #666666;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.listControl {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: auto;
+    li {
+        padding: 0 20px;
+        border-left: 1px solid #fff;
+        line-height: 1;
+        position: relative;
+        &:first-child {
+            padding-right: 40px;
+            border: none;
+            &:before {
+                content: "";
+                position: absolute;
+                right: 20px;
+                top: 25%;
+                width: 6px;
+                height: 6px;
+                border-left: 1px solid #afafaf;
+                border-top: 1px solid #afafaf;
+                -moztransform: rotate(225deg);
+                -webkit-transform: rotate(225deg);
+                -ms-transform: rotate(225deg);
+                transform: rotate(225deg);
+            }
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+    a {
+        color: #fff;
+        font-size: 13px;
+    }
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.formSearch {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 100;
+    width: 30%;
+    input[type=text] {
+        border: none;
+        padding: 15px 30px;
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .textIcon {
+        position: absolute;
+        &--bag {
+            top:42px;
+            transform: translateY(-50%);
+            right: 70px;
+        }
+        &--search {
+            top:42px;
+            transform: translateY(-50%);
+            right: 100px;
+        }
+    }
+}

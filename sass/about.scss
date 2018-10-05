@@ -1,0 +1,93 @@
+#about {
+    .aboutBox {
+        max-width: 1030px;
+        padding: 0 15px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem auto 0;
+        &__info {
+            width: 54%;
+        }
+        &__text {
+            color: #666666;
+            text-align: justify;
+            line-height: 1.8;
+        }
+    }
+    .listAbout {
+        margin: 8rem 0;
+        li {
+            width: 25%;
+            color: #fff;
+            padding: 3rem 2rem;
+            overflow: hidden;
+            h3 {
+                font-size: 1rem;
+                font-weight: 700;
+                span {
+                    font-size: 2.5rem;
+                    display: block;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+            }
+            &:nth-child(1) {
+                background-color: #d67678;
+                background-image: url('../images/about/icon01.png');
+                background-position: bottom right;
+                background-repeat: no-repeat;
+            }
+            &:nth-child(2) {
+                background-color: #d86468;
+                background-image: url('../images/about/icon02.png');
+                background-position: bottom right;
+                background-repeat: no-repeat;
+            }
+            &:nth-child(3) {
+                background-color: #d64d51;
+                background-image: url('../images/about/icon03.png');
+                background-position: bottom right;
+                background-repeat: no-repeat;
+            }
+            &:nth-child(4) {
+                background-color: #d6272c;
+                background-image: url('../images/about/icon04.png');
+                background-position: bottom right;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .newsAbout {
+        p {
+            background: #3e3e3e;
+            text-align: center;
+            padding: 1.5rem 0;
+            a {
+                color: #fff;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .logoBox {
+        padding-top: 5rem;
+        margin-top: 5rem;
+        border-top: 1px solid #f2f2f2;
+    }
+    @media (max-width: 767px) {
+        .aboutBox__info {
+            width: 100%;
+            margin-top: 3rem;
+        }
+        .listAbout li {
+            width: 100%;
+        }
+        .listAbout {
+            margin: 4rem 0;
+        }
+        .newsAbout li {
+            margin-top: 1rem;
+        }
+    }
+}

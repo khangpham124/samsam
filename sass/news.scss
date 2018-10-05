@@ -1,0 +1,43 @@
+#news {
+    .newsContent {
+        margin: 5rem auto;
+        &__content {
+            &__thumb {
+                margin-bottom: 2rem;
+            }
+            &__title {
+                font-weight: 900;
+                font-size: 1.5rem;
+            }
+            &__text {
+                color: #666;
+                margin-top: 1.5rem;
+            }
+            &__info {
+                margin-top: 0.5rem;
+                font-size: 14px;
+                i {
+                    margin-right: 5px;
+                }
+                span + span {
+                    margin-left: 30px;
+                }
+            }
+        }
+        &__shared {
+            margin-top: 7rem;
+            border-top: 1px solid #f5f5f5;
+            border-bottom: 1px solid #f5f5f5;
+            padding: 1rem 0;
+            font-family: 'Poppins', sans-serif;
+            &__icon {
+                margin: 0 1rem;
+                font-size: 1.2rem;
+                color: #999999;
+            }
+            &__text {
+                
+            }
+        }
+    }
+}
