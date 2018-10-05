@@ -95,7 +95,7 @@ textarea {
         color: #fff;
         padding: 1rem;
     }
-    & + ul {
+    &+ul {
         margin-top: 20px;
     }
 }
@@ -116,10 +116,10 @@ textarea {
     &--bdnone {
         border: none;
     }
-    & + a {
+    &+a {
         margin-left: 1rem;
     }
-    a + & {
+    a+& {
         margin-left: 1rem;
     }
     &--white {
@@ -150,6 +150,7 @@ textarea {
     padding-left: 0;
     padding-right: 0;
 }
+
 .sidebar {
     &__logo {
         color: #fff;
@@ -176,7 +177,7 @@ textarea {
             display: flex;
             align-items: center;
         }
-        li + li {
+        li+li {
             margin-top: 2rem;
         }
         &__thumb {
@@ -208,13 +209,13 @@ textarea {
         margin-top: 3rem;
         a {
             display: inline-block;
-            padding:5px;
+            padding: 5px;
             color: #666666;
             border: 1px solid #ccc;
             border-radius: 3px;
         }
         a+a {
-            margin-top:10px;
+            margin-top: 10px;
         }
     }
     &__bnr {
@@ -230,7 +231,7 @@ textarea {
         &__submit {
             position: absolute;
             right: 0;
-            top:20%;
+            top: 20%;
             border: none;
             background: none;
         }
@@ -239,24 +240,24 @@ textarea {
             padding: 10px 20px;
             width: 100%;
         }
-        div + & {
-        margin-top: 3rem;
+        div+& {
+            margin-top: 3rem;
         }
     }
     &__product {
         li {
             font-weight: 700;
         }
-        li + li {
+        li+li {
             margin-top: 20px;
         }
-        div + & {
-            margin-top: 3rem;   
+        div+& {
+            margin-top: 3rem;
         }
     }
     &__filter {
-        div + & {
-            margin-top: 3rem;   
+        div+& {
+            margin-top: 3rem;
         }
     }
 }
@@ -266,7 +267,9 @@ textarea {
     border: none;
 }
 
+
 /* TEXT */
+
 .text {
     margin-top: 2rem;
     &+& {
@@ -285,15 +288,22 @@ textarea {
     &--grey {
         font-weight: 700;
     }
+    &--bold {
+        font-weight: 700;
+    }
+    &--small {
+        margin-top: 0;
+        font-size: 0.8rem;
+    }
 }
 
 
 /* FORM */
+
 .contactSection {
     margin-top: 8rem;
     margin-bottom: 3rem;
     &__col {
-        
         &__icon {
             color: #cccccc;
             font-size: 1.5rem;
@@ -309,7 +319,9 @@ textarea {
             textarea+input {
                 margin-top: 30px;
             }
-            input[type=text],input[type=email],input[type=password] {
+            input[type=text],
+            input[type=email],
+            input[type=password] {
                 display: block;
                 width: 100%;
                 border: 1px solid #e6e6e6;
@@ -341,6 +353,87 @@ textarea {
         }
         strong {
             display: block;
+        }
+    }
+}
+
+.form_style {
+    p+div {
+        margin-top: 2rem;
+    }
+    input+input {
+        margin-top: 30px;
+    }
+    input+textarea {
+        margin-top: 30px;
+    }
+    textarea+input {
+        margin-top: 30px;
+    }
+    input+div {
+        margin-top: 2rem;
+    }
+    div+input {
+        margin-top: 2rem;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=password] {
+        display: block;
+        width: 100%;
+        border: 1px solid #e6e6e6;
+        padding: 0.6rem 1.5rem;
+    }
+    label {
+        color: #666;
+        font-weight: 700;
+        span {
+            color: #cb2024;
+        }
+    }
+    div+label {
+        margin-top: 2rem;
+    }
+    input[type=checkbox]+label {
+        margin-left: 5px;
+    }
+    &__select {
+        &+a {
+            margin-right: 1rem;
+        }
+        margin-right: 1rem;
+        border: 1px solid #ededed;
+        height: 42px;
+        position: relative;
+        color: #999999;
+        padding: 0.5rem 3rem 0.5rem 0.5rem;
+        &::before {
+            content: "";
+            position: absolute;
+            right: 10px;
+            top: 40%;
+            width: 0;
+            height: 0;
+            border-bottom: 6px solid transparent;
+            border-left: 8px solid #999;
+            border-top: 6px solid transparent;
+            -moz-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+        select {
+            padding: 5px 8px;
+            line-height: 1;
+            width: 130%;
+            border: none;
+            box-shadow: none;
+            color: #999999;
+            background-color: transparent;
+            background-image: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
         }
     }
 }

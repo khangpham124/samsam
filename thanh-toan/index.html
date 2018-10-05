@@ -57,31 +57,106 @@
             <div class="accordion" id="accordionExample">
                 <div class="card">
                     <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Thanh toán bằng tài khoản đã có / Đăng nhập ngay
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fa fa-window-maximize" aria-hidden="true"></i>Thanh toán bằng tài khoản đã có / Đăng nhập ngay
                         </button>
-                    </h5>
+                        </h5>
                     </div>
 
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
+                        <div class="card-body">
+
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Thanh toán không cần tài khoản
-                        </button>
-                    </h5>
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-window-maximize" aria-hidden="true"></i>Thanh toán không cần tài khoản</button>
+                        </h5>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form class="form_style">
+                                        <p class="text text--bold">Thông tin hóa đơn</p>
+                                        <div class="row">
+                                            <p class="col-md-6">
+                                                <label>Họ<span>*</span></label>
+                                                <input type="text" class="">
+                                            </p>
+                                            <p class="col-md-6">
+                                                <label>Tên<span>*</span></label>
+                                                <input type="text" class="">
+                                            </p>
+                                        </div>
+                                        <label>Country<span>*</span></label>
+                                        <div class="form_style__select">
+                                            <select>
+                                                <option value="">Vietnam</option>
+                                                <option value="">Option1</option>
+                                                <option value="">Option2</option>
+                                            </select>
+                                        </div>
+                                        <label>Address<span>*</span></label>
+                                        <input type="text" placeholder="Tên đường">
+                                        <input type="text" placeholder="Phường Quận...">
+                                        <div class="row">
+                                            <p class="col-md-6">
+                                                <label>Số điện thoại<span>*</span></label>
+                                                <input type="text" class="">
+                                            </p>
+                                            <p class="col-md-6">
+                                                <label>Email<span>*</span></label>
+                                                <input type="email" class="">
+                                            </p>
+                                        </div>
+                                        <input type="checkbox" id="checkbox"><label>Create an account</label>
+                                    </form>
+                                </div>
+
+                                <div class="col-md-6 checkoutBox__table">
+                                    <p class="text text--bold taC">Hóa đơn</p>
+                                    <table class="checkoutBox__table__bill">
+                                        <tr>
+                                            <th>Sản phẩm</th>
+                                            <td>Giá</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Rượu bảo sâm</th>
+                                            <td>1.000.000 vnd</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Rượu bảo sâm</th>
+                                            <td>1.000.000 vnd</td>
+                                        </tr>
+                                        <tr class="checkoutBox__table__bill__total">
+                                            <th>Tổng cộng</th>
+                                            <td class="checkoutBox__table__bill__price">2.000.000 vnd</td>
+                                        </tr>
+                                    </table>
+                                    <table class="checkoutBox__table__method">
+                                        <tr>
+                                            <td><input type="radio" name="radio" id="radio1"><label for="radio1">Thanh toán khi nhận hàng</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text text--small">Free ship các quận trong nội thành</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="radio" name="radio" id="radio2"><label for="radio2">Thanh toán Internet Banking</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="radio" name="radio" id="radio3"><label for="radio3">Thanh toán bằng Visa</label></td>
+                                        </tr>
+                                    </table>
+                                    <p class="taC"><input type="submit" class="button-red button-red--bdnone" value="Thanh toán"></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
