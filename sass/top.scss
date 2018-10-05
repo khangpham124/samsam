@@ -323,12 +323,21 @@
                     font-size: 1rem;
                 }
             }
+            &__desc {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            &__icon {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+            }
         }
         .button-red {
             padding: 0.5rem 0.8rem;
         }
         a+.button-red {
-            margin-left: 0.5rem;
+            margin-left: 0.1rem;
         }
     }
     

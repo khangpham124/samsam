@@ -757,10 +757,17 @@ div + .sidebar__filter {
     margin: 0 auto; }
   .listCatetory__item li .name {
     font-size: 1rem; }
+  .listCatetory__item__desc {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+  .listCatetory__item__icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px; }
   .button-red {
     padding: 0.5rem 0.8rem; }
   a + .button-red {
-    margin-left: 0.5rem; } }
+    margin-left: 0.1rem; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .listServices img {
